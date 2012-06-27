@@ -1,0 +1,25 @@
+{
+   "author": "Andrew Dunkman <andrew@dunkman.org> (http://dunkman.org)",
+   "name": "trello-orgerview",
+   "description": "An overview of your organization on Trello.",
+   "version": "0.0.0",
+   "repository": {
+      "type": "git",
+      "url": "git://github.com/adunkman/trello-orgerview.git"
+   },
+   "dependencies": {
+      "express": "2.5.10",
+      "jade": "0.26.1",
+      "connect-assets": "2.2.1",
+      "coffee-script": "1.3.3",
+      "stylus": "0.27.1",
+      "node-trello": "0.1.0",
+      "oauth": "0.9.7",
+      "restler": "2.0.1"
+   },
+   "devDependencies": {},
+   "optionalDependencies": {},
+   "engines": {
+      "node": "*"
+   }
+}
