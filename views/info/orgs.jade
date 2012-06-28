@@ -2,3 +2,6 @@ extends ../layout
 
 block body
    h1 Organizations
+
+   ul: each org in orgs
+      li=org.name

@@ -1,10 +1,9 @@
 Trello = require "node-trello"
 config = require "../config/app"
-trello = new Trello(config.key)
 
 module.exports = (req, res, next) ->
-   if req.session.oauth?
-      trello.token = req.session.oauth.access_token
+   accessToken = req.session.oauth?.oauth_access_token
+   trello = new Trello(config.key, accessToken)
 
    trello.isLoggedIn = () ->
       trello.token?
